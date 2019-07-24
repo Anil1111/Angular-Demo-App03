@@ -13,17 +13,32 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row">{{ name }}</th>
+                <td>{{ name }}</td>
                 <td>uppercase</td>
                 <td>{{name | uppercase }}</td>
             </tr>
             <tr>
-                <th scope="row">{{ name }}</th>
+                <td>{{ name }}</td>
                 <td>lowercase</td>
                 <td>{{name | lowercase }}</td>
             </tr>
+            <tr>
+                <td>{{ name }}</td>
+                <td>slice:0:3</td>
+                <td>{{name | slice:0:3 }}</td>
+            </tr>
+            <tr>
+                <td>{{ arr }}</td>
+                <td>slice:2:4</td>
+                <td>{{arr | slice:2:4 }}</td>
+            </tr>
 
         </tbody>
+
+        <h4>Slice:5:20</h4>
+        <ul>
+            <li *ngFor="let item of arr | slice:5:20">{{ item }}</li>
+        </ul>
     </table>
 
 </div>

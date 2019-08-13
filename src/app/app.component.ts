@@ -12,6 +12,15 @@ export class AppComponent {
   pi = Math.PI;
   a = 0.234;
   salary = 1234.5;
+  jsonExample = {
+    name: 'John',
+    age: 30,
+    cars: {
+      car1: 'Ford',
+      car2: 'BMW',
+      car3: 'Fiat'
+    }
+   };
 
 
 }

@@ -25,5 +25,6 @@ export class AppComponent {
   promiseValue = new Promise((resolve, reject) => {
     setTimeout(()=>resolve('Data is here!'), 3500);
   })
+  theDate = new Date();
 
 }

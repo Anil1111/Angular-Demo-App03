@@ -64,13 +64,13 @@
             </tr>
             <tr>
                 <td>{{ salary }}</td>
-                <td>currency:'EUR':false</td>
-                <td>{{salary | currency:'EUR':false }}</td>
+                <td>currency:'EUR':'symbol'</td>
+                <td>{{salary | currency:'EUR':'symbol' }}</td>
             </tr>
             <tr>
                 <td>{{ salary }}</td>
-                <td>currency:'EUR':true:'4.0-0'</td>
-                <td>{{salary | currency:'EUR':true:'4.0-0' }}</td>
+                <td>currency:'EUR':'code':'4.0-0'</td>
+                <td>{{salary | currency:'EUR':'code':'4.0-0' }}</td>
             </tr>
             <tr>
                 <td>{{ salary }}</td>
@@ -81,6 +81,21 @@
                 <td>{{ promiseValue }}</td>
                 <td>async</td>
                 <td>{{promiseValue | async}}</td>
+            </tr>
+            <tr>
+                <td>{{ theDate }}</td>
+                <td>date</td>
+                <td>{{theDate | date}}</td>
+            </tr>
+            <tr>
+                <td>{{ theDate }}</td>
+                <td>date:'medium'</td>
+                <td>{{theDate | date:'medium'}}</td>
+            </tr>
+            <tr>
+                <td>{{ theDate }}</td>
+                <td>date:'MMMM - dd'</td>
+                <td>{{theDate | date:'MMMM - dd'}}</td>
             </tr>
         </tbody>
 

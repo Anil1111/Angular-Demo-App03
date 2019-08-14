@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { reject } from 'q';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,8 @@ export class AppComponent {
       car3: 'Fiat'
     }
    };
-
+  promiseValue = new Promise((resolve, reject) => {
+    setTimeout(()=>resolve('Data is here!'), 3500);
+  })
 
 }
